@@ -15,7 +15,8 @@
   "dependencies": {
     "cookie-parser": "^1.4.4",
     "express": "^4.16.4",
-    "querystring": "^0.2.0"
+    "querystring": "^0.2.0",
+    "request": "^2.88.0"
   },
   "devDependencies": {
     "jest": "^24.7.1",
