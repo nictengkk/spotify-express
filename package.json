@@ -14,7 +14,8 @@
   "license": "ISC",
   "dependencies": {
     "cookie-parser": "^1.4.4",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "querystring": "^0.2.0"
   },
   "devDependencies": {
     "jest": "^24.7.1",
