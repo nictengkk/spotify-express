@@ -3,8 +3,9 @@ const cors = require("cors");
 const app = express();
 const index = require("./routes/index");
 const cookieParser = require("cookie-parser");
-
 const isDev = process.env.NODE_ENV !== "production";
+
+require("dotenv").config();
 
 const whitelist = [];
 if (isDev) {
