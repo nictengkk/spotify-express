@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const app = express();
-const index = require("./routes/index");
+const index = require("./routes/index/index");
 const cookieParser = require("cookie-parser");
 const isDev = process.env.NODE_ENV !== "production";
 
@@ -21,8 +21,10 @@ const corsOptions = {
     }
   },
   credentials: true
+  // allowedHeaders: ["Content-Type", "Authorization"]
 };
 
+// app.options(cors(corsOptions));
 app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
