@@ -17,13 +17,12 @@ router.route("/login").get((req, res) => {
     "user-modify-playback-state",
     "user-read-private",
     "user-read-email",
-    "streaming",
     "user-read-currently-playing",
+    "streaming",
     "user-read-private",
     "user-read-birthdate",
     "playlist-read-private",
-    "playlist-read-collaborative",
-    "app-remote-control"
+    "playlist-read-collaborative"
   ];
   res.redirect(
     "https://accounts.spotify.com/authorize?" +
